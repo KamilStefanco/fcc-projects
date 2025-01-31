@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #80808071;
+}
+
+.editor-wrapper, .preview-wrapper{
+  width:44%;
+  border:1px solid black;
+  height:95vh;
+  background-color: white;
+}
+
+.toolbar{
+  height:6%;
+  background-color: rgb(21, 56, 71);
+  border-bottom:1px solid black;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  display:flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size:20px;
+  font-weight: 900;
+  color:white
+}
+
+.editor{
+  max-height:92.2%;
+  min-height: 92.2%;
+  max-width:99%;
+  min-width: 99%;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+
+
+  padding-top:10px;
+  padding-left: 5px;
+}
+
+.preview{
+  max-height:92.5%;
+  min-height: 92.5%;
+  max-width:98.5%;
+  min-width: 98.5%;
+  overflow: auto;
+
+  padding-top:10px;
+  padding-left: 10px;
+
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+
+}
+
+
+img{
+  width:300px;
+  height:300px;
+}
+
+
+textarea{
+  display:block;
+  border:none;
+}
+
+@media (max-width: 900px) {
+
+  .wrapper {
+    flex-direction: column;
+    height:200vh
+  }
+  
+  .editor-wrapper, .preview-wrapper{
+    width:85%;
+    height:800px;
+  }
+  
+}
